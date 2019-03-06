@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>step process</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    
+</head>
+<body>
+    
+    <section class="design-process-section" id="process-tab" style="direction:rtl">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12"> 
+            <!-- design process steps--> 
+            <!-- Nav tabs -->
+            <ul class="nav process-model more-icon-preocess" role="tablist">
+              <li role="presentation"class="active"  id="discover"><a href="#discover" aria-controls="discover" role="tab" data-toggle="tab"><i class="fa fa-search" aria-hidden="true"></i>
+                <p>سلام</p>
+              </a></li>
+              <li role="presentation" id="strategy"><a href="#strategy" aria-controls="strategy" role="tab" data-toggle="tab"><i class="fa fa-send-o" aria-hidden="true"></i>
+                <p>سلام</p>
+              </a></li>
+              <li role="presentation" id="optimization"><a href="#optimization" aria-controls="optimization" role="tab" data-toggle="tab"><i class="fa fa-qrcode" aria-hidden="true"></i>
+                <p>سلام</p>
+              </a></li>
+              <li role="presentation" id="content"><a href="#content" aria-controls="content" role="tab" data-toggle="tab"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                <p>سلام</p>
+              </a></li>
+              <li role="presentation" id="reporting"><a href="#reporting" aria-controls="reporting" role="tab" data-toggle="tab"><i class="fa fa-clipboard" aria-hidden="true"></i>
+                <p>سلام</p>
+              </a></li>
+            </ul>
+              <!-- end design process steps--> 
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="discover1" style="direction:rtl !important;text-align: right;right:0;">
+                  <div class="design-process-content" >
+                    <h3 class="semi-bold">روز بزرگداشت خواجه نصیرالدین طوسی</h3>
+                   <p>دست هایی که میسازند مقدس ترند از لب هایی که دعا میخوانند
+
+                    کوروش کبیر 
+                    
+                    پنجم اسفندماه روز بزرگداشت خواجه نصیرالدین طوسی و  بابت روز مهندس به همه مهندس‌ها...
+                    </p>
+                   </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="strategy1">
+                  <div class="design-process-content">
+                    <h3 class="semi-bold"></h3>
+                    <p></p>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="optimization1">
+                  <div class="design-process-content">
+                    <h3 class="semi-bold"></h3>
+                    <p></p>
+                     </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="content1">
+                  <div class="design-process-content">
+                    <h3 class="semi-bold"></h3>
+                    <p></p>              
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="reporting1">
+                  <div class="design-process-content">
+                    <h3></h3>
+                    <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+   <script>
+   // script for tab steps
+    $(document).ready(function(){
+        // $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+        //     var href = $(e.target).attr('href');
+        //     var $curr = $(".process-model  a[href='" + href + "']").parent();
+
+        //     $('.process-model li').removeClass();
+
+        //     $curr.addClass("active");
+        //     $curr.prevAll().addClass("visited");
+        //     $("#discover").nextUntil(this).addClass("visited");
+        //     $(this).nextAll().removeClass("visited");
+
+        // });
+        
+        $('.process-model li').click(function(){
+          // $(this).addClass('active');
+          $(this).addClass('visited');
+          // $('.process-model  a[href='" + href + "']').show();
+          $("#discover").nextUntil(this).addClass("visited");
+          $(this).nextAll().removeClass("visited");
+          
+        });
+
+        $("#strategy").click(function(){
+          $("#strategy::before").css('z-index','1')
+        })
+
+      });
+       
+    // end  script for tab steps
+   
+   
+   </script>
+</body>
+</html>
