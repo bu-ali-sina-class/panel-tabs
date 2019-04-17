@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Task Manager</h1>
+        <input type="text" id="input">
+        
+        <button class="submit" id="submit" onclick="addItem()">ADD</button>
+
+        <table id="result" cellpadding="0" cellspacing="0" border="0">
+            <thead id="thead">
+              <tr>
+                <th >Task💼</th>
+                <th class="deleteTask" onclick="deleteTask">Delete Task❌</th>
+                <th class="editTask" onclick="editTask">Edit Task✏️</th>
+                <th class="doneTask" onclick="doneTask">Done Task✅</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody id="tbody">
+            
+            </tbody>
+          </table>
+    </div>
+
+   <script src="1.js"></script>
+</body>
+</html>
