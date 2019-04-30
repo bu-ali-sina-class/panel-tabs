@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        body {
+            background:#6b6b69;
+            color:white;
+            overflow: hidden
+        }
+
+        .container {
+            margin-top: -160px
+        }
+
+        #title {
+            font-size:20px;
+        }
+
+        #text li {
+            position:relative;
+            height: 100px;
+            width: 100px;
+            border: 1px dashed gray;
+            display: inline-block;
+            margin: 0;
+        }
+
+         #text {
+            width:314px;
+            height:314px;
+            background:black;
+            border:5px solid black;
+            margin:auto;
+        }
+
+        #images {
+            width: 100%;
+        }
+
+        #images li {
+            height: 100px;
+            width: 100px;
+
+        }
+
+            #drag4,
+            #drag5,
+            #drag6,
+            #drag7,
+            #drag8,
+            #drag9,
+            #drag10,
+            #drag11,
+            #drag12 {
+                height: 100px;
+                width: 100px;
+                
+                display: inline-block;
+            }
+
+            #drag4 {
+            background: linear-gradient(to bottom right, rgb(0, 89, 255), rgb(0, 89, 255), rgb(0, 255, 234));
+            }
+
+            #drag5 {
+            background: linear-gradient(to right, rgb(38, 0, 255), rgb(0, 153, 255));
+            }
+
+            #drag6 {
+            background: linear-gradient( rgb(38, 0, 255), rgb(0, 153, 255));
+            }
+
+            #drag7 {
+            background: linear-gradient(to bottom right, rgb(25, 0, 255), rgb(25, 0, 255), rgb(0, 153, 255));
+            }
+
+            #drag8 {
+            background:rgb(0, 225, 255);
+            }
+
+            #drag9 {
+            background: linear-gradient(rgb(0, 153, 255), rgb(0, 225, 255));
+            }
+
+            #drag10 {
+            background: linear-gradient(to right, rgb(0, 153, 255), rgb(0, 225, 255));
+            }
+
+            #drag11 {
+            background: linear-gradient(rgb(25, 0, 255), rgb(0, 153, 255));
+            }
+
+            #drag12 {
+            background: linear-gradient(to right, rgb(25, 0, 255),rgb(0, 153, 255));
+            }
+
+            
+    </style>
+    </head>
+    <body>
+        
+        <div class="container">
+                <ul id="images" class="sl">
+                        <li id="drag1"></li>
+                        <li id="drag2"></li>
+                        <li id="drag3"></li>
+                        <li id="drag4"></li>
+                        <li id="drag5"></li>
+                        <li id="drag6"></li>
+                        <li id="drag7"></li>
+                        <li id="drag8"></li>
+                        <li id="drag9"></li>
+                        <li id="drag10"></li>
+                        <li id="drag11"></li>
+                        <li id="drag12"></li>
+                    
+                    </ul>
+                    
+                    <ul id="text" class="sl">
+                           
+                            
+                    </ul>
+        </div>
+            
+        <script src="jquery-3.3.1.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script>
+            $(document).ready(function () {
+            $("#images,#text").sortable({connectWith:".sl", });
+
+            })
+
+            // function allowDrop(ev) {
+            //         ev.preventDefault();
+            //     }
+
+            //     function drag(ev) {
+            //         ev.dataTransfer.setData("text", ev.target.id);
+            //     }
+
+            //     function drop(ev) {
+            //         ev.preventDefault();
+            //         var data = ev.dataTransfer.getData("text");
+            //         ev.target.appendChild(document.getElementById(data));
+            // }
+
+      </script>
+</body>
+</html> 
